@@ -1,0 +1,17 @@
+name: Workflow for Terraform IAC
+
+on:
+    push:
+        branches:
+            - main
+            - staging
+        paths:
+            - terraform/**
+    pull_request:
+        branches:
+            - main
+        paths:
+            - terraform/**
+
+
+jobs:
