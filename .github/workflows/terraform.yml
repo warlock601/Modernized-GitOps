@@ -1,0 +1,25 @@
+name: workflow for Terraform IAC
+
+on:
+    push:
+        branches:
+            - main
+            - staging
+        paths:
+            - terraform/**
+    
+    pull_request:
+        branches:
+            - main
+            - staging
+        paths:
+            - terraform/**
+
+
+env:
+    AWS_ACCESS_KEY: ${{  }}
+    AWS_SECRET_ACCESS_KEY: ${{  }}
+
+
+jobs:
+    
